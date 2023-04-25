@@ -1,26 +1,27 @@
-<androidx.wear.widget.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="@dimen/box_inset_layout_padding"
     app:layout_boxedEdges="all">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="top|center_horizontal"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/topText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="08/04 SAT ~ San Francisco"
-            android:textSize="10sp"
+            android:ellipsize="end"
             android:singleLine="true"
-            android:ellipsize="end" />
+            android:text="08/04 SAT ~ San Francisco"
+            android:textSize="10sp" />
 
         <View
             android:layout_width="match_parent"
@@ -30,24 +31,79 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="end">
+            android:layout_gravity="end"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/timeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/weather"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="8dp"
-                android:layout_gravity="center_vertical"/>
+                android:src="@drawable/weather" />
+
+            <TextView
+                android:id="@+id/temperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:baselineAligned="false"
+            android:indeterminate="false"
+            android:progress="80"
+            android:progressDrawable="@drawable/horizontal_progress_bar"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:baselineAligned="false"
+            android:indeterminate="false"
+            android:progress="40"
+            android:progressDrawable="@drawable/horizontal_progress_bar2"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:baselineAligned="false"
+            android:indeterminate="false"
+            android:progress="50"
+            android:progressDrawable="@drawable/horizontal_progress_bar3"
+            android:visibility="visible" />
+
 
     </LinearLayout>
 

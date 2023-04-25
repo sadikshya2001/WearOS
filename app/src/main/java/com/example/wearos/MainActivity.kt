@@ -3,6 +3,8 @@ package com.example.wearos
 import android.app.Activity
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.TextView
 import com.example.wearos.databinding.ActivityMainBinding
 import java.util.*
@@ -20,6 +22,9 @@ class MainActivity : Activity() {
         val textView = TextView(this)
         textView.text = "08/04 SAT ~ San Francisco"
         textView.gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL
+//        val progressBar = binding.progressBar
+//        progressBar.visibility = View.VISIBLE
+//        progressBar.setProgress(60)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -29,6 +34,10 @@ class MainActivity : Activity() {
         val hour = calendar.get(Calendar.HOUR_OF_DAY)
         val minute = calendar.get(Calendar.MINUTE)
         binding.timeText.text = String.format("%02d:%02d", hour, minute)
+
+        val temperatureTextView = binding.temperatureText
+        temperatureTextView.text = " 20°C "
+
 
     }
 }

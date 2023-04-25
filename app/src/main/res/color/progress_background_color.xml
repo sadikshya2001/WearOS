@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/progress_start_color" android:state_enabled="true"/>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/progress_start_color"
+                android:endColor="@color/progress_end_color"
+                android:angle="0"
+                android:type="linear" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector>
