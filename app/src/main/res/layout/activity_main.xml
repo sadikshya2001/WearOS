@@ -71,7 +71,7 @@
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="120dp"
                 android:layout_height="15dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
                 android:baselineAligned="false"
                 android:indeterminate="false"
@@ -79,9 +79,21 @@
                 android:progressDrawable="@drawable/horizontal_progress_bar"
                 android:visibility="visible" />
 
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/progressBar"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:text="80%" />
+
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
                 android:layout_alignTop="@+id/progressBar"
                 android:layout_alignBottom="@+id/progressBar"
                 android:layout_toEndOf="@+id/progressBar"
@@ -98,7 +110,7 @@
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="120dp"
                 android:layout_height="15dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
                 android:baselineAligned="false"
                 android:indeterminate="false"
@@ -106,9 +118,21 @@
                 android:progressDrawable="@drawable/horizontal_progress_bar2"
                 android:visibility="visible" />
 
+            <TextView
+                android:id="@+id/progressText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar1"
+                android:layout_alignBottom="@+id/progressBar1"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/progressBar1"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:text="55%" />
+
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
                 android:layout_alignTop="@+id/progressBar1"
                 android:layout_alignBottom="@+id/progressBar1"
                 android:layout_toEndOf="@+id/progressBar1"
@@ -125,7 +149,7 @@
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="120dp"
                 android:layout_height="15dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
                 android:baselineAligned="false"
                 android:indeterminate="false"
@@ -133,9 +157,21 @@
                 android:progressDrawable="@drawable/horizontal_progress_bar3"
                 android:visibility="visible" />
 
+            <TextView
+                android:id="@+id/progressText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar2"
+                android:layout_alignBottom="@+id/progressBar2"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/progressBar2"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:text="40%" />
+
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
                 android:layout_alignTop="@+id/progressBar2"
                 android:layout_alignBottom="@+id/progressBar2"
                 android:layout_toEndOf="@+id/progressBar2"
