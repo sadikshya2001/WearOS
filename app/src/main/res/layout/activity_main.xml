@@ -102,7 +102,7 @@
                 android:layout_marginTop="15dp"
                 android:baselineAligned="false"
                 android:indeterminate="false"
-                android:progress="80"
+                android:progress="55"
                 android:progressDrawable="@drawable/horizontal_progress_bar2"
                 android:visibility="visible" />
 
@@ -129,7 +129,7 @@
                 android:layout_marginTop="15dp"
                 android:baselineAligned="false"
                 android:indeterminate="false"
-                android:progress="80"
+                android:progress="40"
                 android:progressDrawable="@drawable/horizontal_progress_bar3"
                 android:visibility="visible" />
 
